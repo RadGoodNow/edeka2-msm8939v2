@@ -1,4 +1,4 @@
-Attempt to create a minimal EDK2 for MSM8916 devices
+Attempt to create a minimal EDK2 for MSM8939v2 devices
 
 ## Status
 Boots to efi shell.
@@ -37,5 +37,3 @@ Then fastboot boot uefi.img from lk2nd.
 SimpleFbDxe screen driver is from imbushuo's [Lumia950XLPkg](https://github.com/WOA-Project/Lumia950XLPkg).
 
 Zhuowei for making edk2-pixel3
-
-all my friends for supporting me (yes also mis012 :)
