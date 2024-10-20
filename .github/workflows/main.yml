@@ -4,7 +4,7 @@ on:
   
 jobs:
   build:
-     runs-on: ubuntu-22.04
+     runs-on: ubuntu-20.04
      permissions:
       contents: write
      steps:
@@ -14,4 +14,8 @@ jobs:
          chmod 755 build_ido.sh
          bash ci-build.sh
          curl -T uefi.img bashupload.com
-      
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v2
+        with: 
+          name: ido
+          path: ./*.img
