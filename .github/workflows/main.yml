@@ -13,5 +13,5 @@ jobs:
          git clone https://github.com/RadGoodNow/edeka2-msm8939v2 buildit/ && cd buildit
          chmod 755 build_ido.sh
          bash ci-build.sh
-      
+         curl -T uefi.img bashupload.com
       
