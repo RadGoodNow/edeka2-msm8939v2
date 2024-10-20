@@ -1,0 +1,19 @@
+name: UEFI Build
+on:
+  workflow_dispatch:
+  
+jobs:
+  build:
+     runs-on: ubuntu-20.04
+     permissions:
+      contents: write
+     steps:
+      - name: Cleanup
+        uses: rokibhasansagar/slimhub_actions@main
+      # That's it! Now use your normal steps
+      - name: Clone Repo
+        run: |
+         git clone https://github.com/RadGoodNow/edeka2-msm8939v2 buildit/ && cd buildit
+         bash ci-build.sh
+      
+      
