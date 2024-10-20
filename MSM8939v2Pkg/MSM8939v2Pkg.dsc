@@ -168,7 +168,7 @@
   #
   # PEI Phase modules
   #
-  ArmPlatformPkg/PrePi/PeiUniCore.inf
+  ArmPlatformPkg/PeilessSec/PeilessSec.inf
 
   #
   # DXE
