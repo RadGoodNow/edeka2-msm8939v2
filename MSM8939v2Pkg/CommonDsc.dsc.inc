@@ -92,8 +92,8 @@
   AuthVariableLib|MdeModulePkg/Library/AuthVariableLibNull/AuthVariableLibNull.inf
 
   #testing
-  FrameBufferSerialPortLib|MSM8939v2Pkg/Library/FrameBufferSerialPortLib/FrameBufferSerialPortLib.inf
   FrameBufferBltLib|MSM8939v2Pkg/Library/FrameBufferBltLib/FrameBufferBltLib.inf
+  FrameBufferSerialPortLib|MSM8939v2Pkg/Library/FrameBufferSerialPortLib/FrameBufferSerialPortLib.inf
 
   # BDS Libraries
   FdtLib|EmbeddedPkg/Library/FdtLib/FdtLib.inf
