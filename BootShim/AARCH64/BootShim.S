@@ -37,11 +37,11 @@ _StackSize0:
 
 _StackBase:
 	/* Text Offset */
-	.quad UEFI_BASE
+	.quad 0x94500000
 
 _StackSize:
 	/* Image Size */
-	.quad UEFI_SIZE
+	.quad 0x00200000
 
 _Start:
 	mov	x4, x1
