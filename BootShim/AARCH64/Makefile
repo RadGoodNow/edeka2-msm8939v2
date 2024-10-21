@@ -10,6 +10,6 @@ BootShim.bin: BootShim.elf
 	$(OBJCOPY) -O binary $< $@
 
 BootShim.elf: BootShim.S
-	$(CC) -c $< -o $@ -DCREATE_FDT_POINTER=$(CREATE_FDT_POINTER) -DFDT_POINTER_ADDRESS=$(FDT_POINTER_ADDRESS) -DUEFI_BASE=$(UEFI_BASE) -DUEFI_SIZE=$(UEFI_SIZE)
+	$(CC) -c $< -o $@ -DUEFI_BASE=0x94500000 -DUEFI_SIZE=0x00200000
 
 BootShim.S:
