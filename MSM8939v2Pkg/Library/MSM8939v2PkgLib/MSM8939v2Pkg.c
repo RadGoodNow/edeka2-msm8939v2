@@ -18,6 +18,7 @@
 #include <Library/PcdLib.h>
 
 #include <Ppi/ArmMpCoreInfo.h>
+extern VOID *__stack_chk_guard;
 
 ARM_CORE_INFO mHiKey960InfoTable[] = {
   {
