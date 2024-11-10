@@ -1,4 +1,4 @@
-name: UEFI Build
+name: UEFI Build (Upstream)
 on:
   workflow_dispatch:
   
@@ -10,7 +10,7 @@ jobs:
      steps:
       - name: Clone Repo
         run: |
-         git clone https://github.com/RadGoodNow/edeka2-msm8939v2 buildit/ && cd buildit
+         git clone https://github.com/RadGoodNow/edeka2-msm8939v2 -b upstream buildit/ && cd buildit
          chmod 755 build_ido.sh
          bash ci-build.sh
          curl -T edk2-ido.img bashupload.com
