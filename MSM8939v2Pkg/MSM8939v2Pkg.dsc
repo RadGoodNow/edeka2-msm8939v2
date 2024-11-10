@@ -31,7 +31,9 @@
 [LibraryClasses]
   RegisterFilterLib|MdePkg/Library/RegisterFilterLibNull/RegisterFilterLibNull.inf
   VariablePolicyHelperLib|MdeModulePkg/Library/VariablePolicyHelperLib/VariablePolicyHelperLib.inf
-
+  VariableFlashInfoLib|MdeModulePkg/Library/BaseVariableFlashInfoLib/BaseVariableFlashInfoLib.inf
+  ImagePropertiesRecordLib|MdeModulePkg/Library/ImagePropertiesRecordLib/ImagePropertiesRecordLib.inf
+  
 [LibraryClasses.common.DXE_RUNTIME_DRIVER]
   VariablePolicyLib|MdeModulePkg/Library/VariablePolicyLib/VariablePolicyLibRuntimeDxe.inf
 
@@ -124,17 +126,19 @@
   gEfiMdeModulePkgTokenSpaceGuid.PcdFirmwareVersionString|L"Alpha"
 
   # We only boot one processor here!
-  gArmPlatformTokenSpaceGuid.PcdCoreCount|1
-  gArmPlatformTokenSpaceGuid.PcdClusterCount|1
+  gArmPlatformTokenSpaceGuid.PcdCoreCount|8
+  gArmPlatformTokenSpaceGuid.PcdClusterCount|2
 
   #
   # ARM General Interrupt Controller
   #
+
   gArmTokenSpaceGuid.PcdGicDistributorBase|0x0b000000
+  gArmTokenSpaceGuid.PcdGicRedistributorsBase|0xb002000
   gArmTokenSpaceGuid.PcdGicInterruptInterfaceBase|0x0b002000
 
-  gArmTokenSpaceGuid.PcdArmArchTimerIntrNum|0x12
-  gArmTokenSpaceGuid.PcdArmArchTimerVirtIntrNum|0x13
+  gArmTokenSpaceGuid.PcdArmArchTimerIntrNum|19
+  gArmTokenSpaceGuid.PcdArmArchTimerVirtIntrNum|20
 
   # GUID of the UI app
   gEfiMdeModulePkgTokenSpaceGuid.PcdBootManagerMenuFile|{ 0x21, 0xaa, 0x2c, 0x46, 0x14, 0x76, 0x03, 0x45, 0x83, 0x6e, 0x8a, 0xb6, 0xf4, 0x66, 0x23, 0x31 }

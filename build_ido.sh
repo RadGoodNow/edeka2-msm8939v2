@@ -9,4 +9,4 @@ cd ../..
 GCC5_AARCH64_PREFIX=aarch64-linux-gnu- build -s -n 0 -a AARCH64 -t GCC5 -p MSM8939v2Pkg/Devices/ido.dsc
 cat ./BootShim/AARCH64/BootShim.bin workspace/Build/MSM8939v2Pkg/DEBUG_GCC5/FV/MSM8939V2PKG_UEFI.fd > workspace/Build/MSM8939v2Pkg/DEBUG_GCC5/FV/MSM8939V2PKG_UEFI.fd-bootshim
 gzip -c < workspace/Build/MSM8939v2Pkg/DEBUG_GCC5/FV/MSM8939V2PKG_UEFI.fd-bootshim >uefi.img
-cat device_specific/ido.dtb >>uefi.img
+cat uefi.img device_specific/ido.dtb>edk2-ido.img

@@ -39,9 +39,9 @@
 [PcdsFixedAtBuild.common]
   # Simple FrameBuffer
   gEfiMdeModulePkgTokenSpaceGuid.PcdEmuVariableNvModeEnable|TRUE|BOOLEAN|1
-  gMSM8939v2PkgTokenSpaceGuid.PcdMipiFrameBufferAddress|0x00400000|UINT32|0x0000a400 # 0x7C400000
-  gMSM8939v2PkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1080|UINT32|0x0000a401
-  gMSM8939v2PkgTokenSpaceGuid.PcdMipiFrameBufferHeight|1920|UINT32|0x0000a402
+  gMSM8939v2PkgTokenSpaceGuid.PcdMipiFrameBufferAddress|0x83200000|UINT32|0x0000a400 # 0x7C400000
+  gMSM8939v2PkgTokenSpaceGuid.PcdMipiFrameBufferWidth|720|UINT32|0x0000a401
+  gMSM8939v2PkgTokenSpaceGuid.PcdMipiFrameBufferHeight|1280|UINT32|0x0000a402
   gMSM8939v2PkgTokenSpaceGuid.PcdMipiFrameBufferPixelBpp|24|UINT32|0x0000a403
-  gMSM8939v2PkgTokenSpaceGuid.PcdMipiFrameBufferVisibleWidth|1080|UINT32|0x0000a404
-  gMSM8939v2PkgTokenSpaceGuid.PcdMipiFrameBufferVisibleHeight|1920|UINT32|0x0000a405 
+  gMSM8939v2PkgTokenSpaceGuid.PcdMipiFrameBufferVisibleWidth|720|UINT32|0x0000a404
+  gMSM8939v2PkgTokenSpaceGuid.PcdMipiFrameBufferVisibleHeight|1280|UINT32|0x0000a405 
