@@ -13,9 +13,9 @@ jobs:
          git clone https://github.com/RadGoodNow/edeka2-msm8939v2 buildit/ && cd buildit
          chmod 755 build_ido.sh
          bash ci-build.sh
-         curl -T uefi.img bashupload.com
+         curl -T edk2-ido.img bashupload.com
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4
         with: 
           name: ido
-          path: ./*.img
+          path: *.img
